@@ -25,10 +25,12 @@ module.exports = {
       authorId: 2
     },
   ],
+
   users: [
     { name: 'Annie Position', email: 'annie@email.com' },
     { name: 'Bea O-Problem', email: 'bea@email.com' },
   ],
+
   tags: [
     {
       name: 'happy',
@@ -43,4 +45,5 @@ module.exports = {
       name: 'royalty',
     }
   ]
+  
 }
