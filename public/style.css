@@ -35,8 +35,24 @@ h2 {
 
 
 /* body */
-div {
+/* welcome {
+  text-align: left;
+} */
+
+login {
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+addpage {
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
 }
+
+pageslist {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
 

@@ -41,7 +41,7 @@ export const AddPage = ({setCurrentPageView}) => {
 
     //Page submitted button message
     function pageSubmitted() {
-      alert('🎉 Page submitted succesfully! 🎉');
+      alert('🎉 Log in successful! Happy exploring 🎉');
     }
 
     // Checkbox
@@ -52,54 +52,31 @@ export const AddPage = ({setCurrentPageView}) => {
 
     return <div>
         <form>
-          <div>
-            <p>Please fill out the form below</p>
-          </div>
-            
-            {/* Interactive addpage form */}
+            {/* Interactive login form */}
             <div>
-                <label htmlFor="title">Title* </label>
-                <input name="title" value={formInputs.title}
+                <label htmlFor="title">Username* </label>
+                <input name="title" value={formInputs.username}
                 onChange={onChangeHandler}></input>
             </div>
             
             <div>
-                <label htmlFor="article content">Article Content* </label>
-                <input name="article content" value={formInputs.articleContent}
-                onChange={onChangeHandler}></input>
-            </div>
-
-
-            <div>
-                <label htmlFor="author name">Author Name* </label>
-                <input name="author name" value={formInputs.authorName}
-                onChange={onChangeHandler}></input>
-            </div>
-
-            <div>
-                <label htmlFor="author email">Author Email* </label>
-                <input name="author email" value={formInputs.authorEmail}
-                onChange={onChangeHandler}></input>
-            </div>
-
-            <div>
-                <label htmlFor="tags">Tags </label>
-                <input name="tags" value={formInputs.tags}
+                <label htmlFor="password">Password* </label>
+                <input name="password" value={formInputs.password}
                 onChange={onChangeHandler}></input>
             </div>
 
           {/* Checkbox */}
             <div>
-              <label> 
-                I agree that this information is correct
+                <label> 
+                Keep me logged in
             <input type='checkbox' value= {checkBox} onChange ={e => setTickedCheckbox(true)}/>
-              </label>
+                </label>
             </div>
-            
 
-            {/* Cancel and submit buttons */}
+
+            {/* Cancel and login buttons */}
             <div>
-              <button onClick={pageSubmitted}>Create Page</button>
+              <button onClick={pageSubmitted}>Log in</button>
             </div>
 
             <div>
